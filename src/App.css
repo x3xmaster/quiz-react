@@ -1,0 +1,101 @@
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  width:100%;
+  height:100%;
+  float:left;
+}
+body {
+  font-size: 1.2rem;
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  float:left;
+  min-height:100%;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  color: #333;
+  margin: 100px auto;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius:10px;
+  background: #f2f2f2;
+}
+.App button {
+  background: #6f68ed;
+  color:#fff;
+  border-radius: 3px;
+  padding:10px 30px;
+  cursor: pointer;
+  border:0;
+  outline:none;
+}
+.App .btn-grey {
+  background: #ccc;
+  color:#000;
+}
+.App .btn-grey:hover {
+  background: #999;
+  color:#fff
+}
+
+
+.questionWrapper  {
+  display:flex;
+  justify-content: space-between;
+  padding:20px 0;
+}
+.resultWrapper { padding:20px 0 0 0;}
+
+.questionWrapper > div {
+  flex-basis: calc((100% - 20px) / 2);
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 10px;
+  background: #fff;
+}
+.questionWrapper >  img {
+  width: 30px;
+}
+.resultWrapper > div {
+  flex-basis: calc((100% - 60px) / 2);
+  cursor: inherit;
+}
+.questionWrapper > div.selected {
+  background: #f2f2f2;
+}
+.questionWrapper > div p {
+  margin:5px 0 0 0;
+}
+.result {
+  margin-top: 20px;
+}
+.settings {
+  width:100%;
+}
+.settings h2 {
+  font-size:24px;
+}
+.settings .setting-inner {
+  text-align: left;
+  width:100%;
+}
+.settings .setting-inner span {
+  font-weight: bold;
+  padding-bottom:10px;
+}
+.settings .setting-inner span, .settings .setting-inner label {
+  width:100%;
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
